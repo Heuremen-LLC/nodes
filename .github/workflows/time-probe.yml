@@ -1,0 +1,27 @@
+name: time-probe
+# Runs one TIME round from this runner's network. Triggered by Nova's tick bus through repository_dispatch, never on a timer.
+on:
+  repository_dispatch:
+    types: [time-probe]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: One round of public time servers
+        working-directory: time
+        run: |
+          python3 ntp_probe.py github-azure ../data_time_round.jsonl 1 > /dev/null
+          mkdir -p ../data/time
+          tail -n 400 ../data_time_round.jsonl > ../data/time/latest.jsonl
+          echo "runner: $(uname -sr), $(curl -s https://api.ipify.org >/dev/null 2>&1; echo ip hidden)" > ../data/time/runner.txt
+      - name: Save the round
+        run: |
+          git config user.name "Bones"
+          git config user.email "268764679+claude-wayfinder@users.noreply.github.com"
+          git add data/time
+          git commit -m "TIME round from the GitHub runner network" || exit 0
+          git push
