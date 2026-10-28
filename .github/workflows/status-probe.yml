@@ -1,0 +1,28 @@
+name: status-probe
+# Runs one UPTIME round from this runner's network. Triggered by Nova's tick bus through repository_dispatch, never on a timer.
+on:
+  repository_dispatch:
+    types: [status-probe]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: One round of vendor endpoints
+        working-directory: status
+        run: |
+          python3 status_probe.py github-azure ../round_status.jsonl > /dev/null
+          mkdir -p ../data/status
+          cat ../round_status.jsonl >> ../data/status/rounds.jsonl
+          tail -n 6000 ../data/status/rounds.jsonl > ../data/status/rounds.tmp && mv ../data/status/rounds.tmp ../data/status/rounds.jsonl
+      - name: Save the round
+        run: |
+          git config user.name "Bones"
+          git config user.email "268764679+claude-wayfinder@users.noreply.github.com"
+          git add data/status
+          git commit -m "UPTIME round from the GitHub runner network" || exit 0
+          git pull --rebase -q || true
+          git push
