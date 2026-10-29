@@ -5366,3 +5366,25 @@
 {"kind": "probe", "round": 1793314130, "seat": "github-azure", "vendor": "Vercel", "ok": true, "code": 200, "err": null, "ms": 632}
 {"kind": "probe", "round": 1793314130, "seat": "github-azure", "vendor": "Linear", "ok": true, "code": 200, "err": null, "ms": 749}
 {"kind": "probe", "round": 1793314130, "seat": "github-azure", "vendor": "Atlassian", "ok": true, "code": 200, "err": null, "ms": 936}
+{"kind": "probe", "round": 1793314515, "seat": "github-azure", "vendor": "PyPI", "ok": true, "code": 200, "err": null, "ms": 400}
+{"kind": "probe", "round": 1793314515, "seat": "github-azure", "vendor": "Discord", "ok": true, "code": 200, "err": null, "ms": 433}
+{"kind": "probe", "round": 1793314515, "seat": "github-azure", "vendor": "npm", "ok": true, "code": 200, "err": null, "ms": 436}
+{"kind": "probe", "round": 1793314515, "seat": "github-azure", "vendor": "DigitalOcean", "ok": true, "code": 200, "err": null, "ms": 442}
+{"kind": "probe", "round": 1793314515, "seat": "github-azure", "vendor": "control: example.com", "ok": true, "code": 200, "err": null, "ms": 403}
+{"kind": "probe", "round": 1793314515, "seat": "github-azure", "vendor": "GitHub", "ok": true, "code": 200, "err": null, "ms": 459}
+{"kind": "probe", "round": 1793314515, "seat": "github-azure", "vendor": "OpenAI", "ok": true, "code": 403, "err": null, "ms": 441}
+{"kind": "probe", "round": 1793314515, "seat": "github-azure", "vendor": "Vercel", "ok": true, "code": 200, "err": null, "ms": 470}
+{"kind": "probe", "round": 1793314515, "seat": "github-azure", "vendor": "Reddit", "ok": true, "code": 403, "err": null, "ms": 471}
+{"kind": "probe", "round": 1793314515, "seat": "github-azure", "vendor": "Anthropic", "ok": true, "code": 200, "err": null, "ms": 508}
+{"kind": "probe", "round": 1793314515, "seat": "github-azure", "vendor": "Docker", "ok": true, "code": 200, "err": null, "ms": 536}
+{"kind": "probe", "round": 1793314515, "seat": "github-azure", "vendor": "control: 1.1.1.1", "ok": true, "code": 200, "err": null, "ms": 510}
+{"kind": "probe", "round": 1793314515, "seat": "github-azure", "vendor": "Cloudflare", "ok": true, "code": 200, "err": null, "ms": 571}
+{"kind": "probe", "round": 1793314515, "seat": "github-azure", "vendor": "Datadog", "ok": true, "code": 200, "err": null, "ms": 565}
+{"kind": "probe", "round": 1793314515, "seat": "github-azure", "vendor": "Dropbox", "ok": true, "code": 200, "err": null, "ms": 575}
+{"kind": "probe", "round": 1793314515, "seat": "github-azure", "vendor": "Netlify", "ok": true, "code": 200, "err": null, "ms": 600}
+{"kind": "probe", "round": 1793314515, "seat": "github-azure", "vendor": "Sentry", "ok": true, "code": 200, "err": null, "ms": 581}
+{"kind": "probe", "round": 1793314515, "seat": "github-azure", "vendor": "Zoom", "ok": true, "code": 200, "err": null, "ms": 631}
+{"kind": "probe", "round": 1793314515, "seat": "github-azure", "vendor": "Twilio", "ok": true, "code": 200, "err": null, "ms": 643}
+{"kind": "probe", "round": 1793314515, "seat": "github-azure", "vendor": "Linear", "ok": true, "code": 200, "err": null, "ms": 629}
+{"kind": "probe", "round": 1793314515, "seat": "github-azure", "vendor": "Notion", "ok": true, "code": 200, "err": null, "ms": 633}
+{"kind": "probe", "round": 1793314515, "seat": "github-azure", "vendor": "Atlassian", "ok": true, "code": 200, "err": null, "ms": 1030}
