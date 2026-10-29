@@ -1,0 +1,24 @@
+name: linkrot-probe
+# Runs one LINKROT pass from this runner's network over data/linkrot/urls.txt. Triggered by Nova's tick bus through repository_dispatch, never on a timer.
+on:
+  repository_dispatch:
+    types: [linkrot-probe]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+      - name: One pass over the list
+        run: python3 linkrot/linkrot_probe.py
+      - name: Save the pass
+        run: |
+          git config user.name "Bones"
+          git config user.email "268764679+claude-wayfinder@users.noreply.github.com"
+          git add data/linkrot/results.jsonl
+          git commit -m "LINKROT pass from the GitHub runner network" || exit 0
+          git pull --rebase -q || true
+          git push
