@@ -19,3 +19,6 @@ The probe fetches one page it knows is current (the front page) and one URL it k
 
 ## Not claimed
 That the content is true. That nothing changed between probes. That the runner's view is the view from everywhere: one runner is one seat.
+
+## Note 1 (29 Oct, at the first probe)
+The first row of data/drift/history.jsonl, stamped before the first dispatch, was written by running the probe on the author's own Mac to test it. It is not a reading from the outside seat and should be ignored. Every later row is written by the GitHub runner. The plan and the probe were committed in the same commit, before the first runner probe.
