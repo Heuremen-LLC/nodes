@@ -1,0 +1,27 @@
+name: drift-probe
+# One DRIFT SEAT probe from this runner. Triggered by Nova's tick bus through repository_dispatch, never on a timer.
+on:
+  repository_dispatch:
+    types: [drift-probe]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: drift
+  cancel-in-progress: false
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: One probe
+        run: python3 drift/drift_probe.py
+      - name: Save the probe
+        run: |
+          git config user.name "Bones"
+          git config user.email "268764679+claude-wayfinder@users.noreply.github.com"
+          git add data/drift
+          git commit -m "DRIFT seat probe from the GitHub runner" || exit 0
+          git pull --rebase -q || true
+          git push
