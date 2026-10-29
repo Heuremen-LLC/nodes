@@ -1,5 +1,5 @@
 {
- "t": "2026-10-29T16:51:54Z",
+ "t": "2026-10-29T16:53:18Z",
  "control": "PASSED",
  "pages": {
   "/": "MATCH",
@@ -38,142 +38,142 @@
  },
  "feeds": {
   "time/live.json": {
-   "age_h": 0.28,
+   "age_h": 0.02,
    "limit_h": 1.5,
    "state": "FRESH"
   },
   "coin/live.json": {
-   "age_h": 1.03,
+   "age_h": 1.06,
    "limit_h": 7.8,
    "state": "FRESH"
   },
   "cada/live.json": {
-   "age_h": 0.28,
+   "age_h": 0.02,
    "limit_h": 1.5,
    "state": "FRESH"
   },
   "uptime/live.json": {
-   "age_h": 0.02,
+   "age_h": 0.04,
    "limit_h": 1.5,
    "state": "FRESH"
   },
   "forecast/live.json": {
-   "age_h": 0.02,
+   "age_h": 0.04,
    "limit_h": 1.5,
    "state": "FRESH"
   },
   "cadence/live.json": {
-   "age_h": 0.1,
+   "age_h": 0.12,
    "limit_h": 2,
    "state": "FRESH"
   },
   "trials/live.json": {
-   "age_h": 0.27,
+   "age_h": 0.29,
    "limit_h": 16,
    "state": "FRESH"
   },
   "launch/live.json": {
-   "age_h": 0.28,
+   "age_h": 0.31,
    "limit_h": 1.9,
    "state": "FRESH"
   },
   "linkrot/live.json": {
-   "age_h": 0.28,
+   "age_h": 0.31,
    "limit_h": 1.9,
    "state": "FRESH"
   },
   "arxivdrift/live.json": {
-   "age_h": 0.28,
+   "age_h": 0.31,
    "limit_h": 4,
    "state": "FRESH"
   },
   "support/live.json": {
-   "age_h": 0.15,
+   "age_h": 0.17,
    "limit_h": 16,
    "state": "FRESH"
   },
   "pkglicense/live.json": {
-   "age_h": 0.28,
+   "age_h": 0.31,
    "limit_h": 39.0,
    "state": "FRESH"
   },
   "hflicense/live.json": {
-   "age_h": 0.28,
+   "age_h": 0.31,
    "limit_h": 39.0,
    "state": "FRESH"
   },
   "hfsize/live.json": {
-   "age_h": 0.28,
+   "age_h": 0.31,
    "limit_h": 39.0,
    "state": "FRESH"
   },
   "change/live.json": {
-   "age_h": 0.28,
+   "age_h": 0.31,
    "limit_h": 8,
    "state": "FRESH"
   },
   "secrecords/live.json": {
-   "age_h": 3.3,
+   "age_h": 3.32,
    "limit_h": 39.0,
    "state": "FRESH"
   },
   "qia/audit.json": {
-   "age_h": 0.28,
+   "age_h": 0.31,
    "limit_h": 2.5,
    "state": "FRESH"
   },
   "qia/stability.json": {
-   "age_h": 0.28,
+   "age_h": 0.31,
    "limit_h": 2.5,
    "state": "FRESH"
   },
   "qia/ibm.json": {
-   "age_h": 0.28,
+   "age_h": 0.31,
    "limit_h": 2.5,
    "state": "FRESH"
   },
   "qia/queue.json": {
-   "age_h": 0.87,
+   "age_h": 0.04,
    "limit_h": 3,
    "state": "FRESH"
   },
   "seat/live.json": {
-   "age_h": 0.02,
+   "age_h": 0.01,
    "limit_h": 2.9,
    "state": "FRESH"
   },
   "pkginstall/live.json": {
-   "age_h": 4.62,
+   "age_h": 4.64,
    "limit_h": 39.0,
    "state": "FRESH"
   },
   "stack/live.json": {
-   "age_h": 0.28,
+   "age_h": 0.31,
    "limit_h": 3.9,
    "state": "FRESH"
   },
   "revise/live.json": {
-   "age_h": 0.28,
+   "age_h": 0.31,
    "limit_h": 78,
    "state": "FRESH"
   },
   "fedsep/live.json": {
-   "age_h": 3.18,
+   "age_h": 3.21,
    "limit_h": 234,
    "state": "FRESH"
   },
   "hpt/live.json": {
-   "age_h": 1.38,
+   "age_h": 1.41,
    "limit_h": 40,
    "state": "FRESH"
   },
   "weights/live.json": {
-   "age_h": 1.87,
+   "age_h": 1.89,
    "limit_h": 40,
    "state": "FRESH"
   },
   "airline/live.json": {
-   "age_h": 0.28,
+   "age_h": 0.31,
    "limit_h": 40,
    "state": "FRESH"
   }
