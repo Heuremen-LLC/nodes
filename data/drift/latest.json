@@ -1,5 +1,5 @@
 {
- "t": "2026-10-29T11:56:31Z",
+ "t": "2026-10-29T11:57:04Z",
  "control": "PASSED",
  "pages": {
   "/": "MATCH",
@@ -34,7 +34,7 @@
    "state": "FRESH"
   },
   "coin/live.json": {
-   "age_h": 0.89,
+   "age_h": 0.9,
    "limit_h": 1.5,
    "state": "FRESH"
   },
@@ -44,17 +44,17 @@
    "state": "FRESH"
   },
   "uptime/live.json": {
-   "age_h": 0.04,
+   "age_h": 0.05,
    "limit_h": 1.5,
    "state": "FRESH"
   },
   "forecast/live.json": {
-   "age_h": 0.04,
+   "age_h": 0.05,
    "limit_h": 1.5,
    "state": "FRESH"
   },
   "cadence/live.json": {
-   "age_h": 0.14,
+   "age_h": 0.15,
    "limit_h": 2,
    "state": "FRESH"
   },
@@ -64,12 +64,12 @@
    "state": "FRESH"
   },
   "launch/live.json": {
-   "age_h": 0.51,
+   "age_h": 0.52,
    "limit_h": 3,
    "state": "FRESH"
   },
   "linkrot/live.json": {
-   "age_h": 0.51,
+   "age_h": 0.52,
    "limit_h": 3,
    "state": "FRESH"
   },
@@ -94,17 +94,17 @@
    "state": "FRESH"
   },
   "hfsize/live.json": {
-   "age_h": 0.94,
+   "age_h": 0.95,
    "limit_h": 40,
    "state": "FRESH"
   },
   "change/live.json": {
-   "age_h": 0.76,
+   "age_h": 0.77,
    "limit_h": 8,
    "state": "FRESH"
   },
   "secrecords/live.json": {
-   "age_h": 0.06,
+   "age_h": 0.07,
    "limit_h": 40,
    "state": "FRESH"
   },
@@ -119,12 +119,12 @@
    "state": "FRESH"
   },
   "qia/ibm.json": {
-   "age_h": 0.14,
+   "age_h": 0.15,
    "limit_h": 2.5,
    "state": "FRESH"
   },
   "qia/queue.json": {
-   "age_h": 0.24,
+   "age_h": 0.25,
    "limit_h": 3,
    "state": "FRESH"
   }
