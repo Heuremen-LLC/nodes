@@ -13,8 +13,12 @@ def get(u, n=3):
         except Exception: time.sleep(2 * (i + 1))
     return None
 sha = lambda b: hashlib.sha256(b).hexdigest()
-def stamp(d, now):
-    s = d.get('updated') or d.get('read')
+def stamp(d, now, path=None):
+    # 30 Oct 2026 (site pass H-17, I-9): a feed whose top-level stamp is a one-time read names the stamp the live keeper writes (targets.json "stamps", e.g. "live.updated")
+    if path:
+        s = d
+        for k in path.split('.'): s = s.get(k) if isinstance(s, dict) else None
+    else: s = d.get('updated') or d.get('read')
     if not isinstance(s, str): return None
     m = re.match(r'(\d{4})-(\d{2})-(\d{2})[ T](\d{2}):(\d{2})', s)
     if m: return D.datetime(*map(int, m.groups()), tzinfo=D.timezone.utc)
@@ -38,7 +42,7 @@ if control:
         b = get(SITE + f)
         try: d = json.loads(b) if b else None
         except Exception: d = None
-        t = stamp(d, now) if isinstance(d, dict) else None
+        t = stamp(d, now, T.get('stamps', {}).get(f)) if isinstance(d, dict) else None
         if t is None: feeds[f] = dict(state='UNREACHABLE')
         else:
             age = round((now - t).total_seconds() / 3600, 2); feeds[f] = dict(age_h=age, limit_h=lim, state='FRESH' if age <= lim else 'STALE')
