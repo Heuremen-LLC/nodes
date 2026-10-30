@@ -40,3 +40,8 @@ The target list still held /sad, which now redirects to /hermes/model, so every 
 The COIN desk was removed from indahl.ai on 30 Oct by Wayfinder's word. The page /coin and the feeds coin/live.json and coin/trends.json are no
 longer targets, so probes from this commit on do not count them. Probes between the removal and this commit (about 13:12 to 17:30 UTC) read
 /coin and coin/live.json as unreachable, which was the removal, not an outage. No rule changed.
+
+## Addendum 4 (30 Oct, after the calibration cadence change)
+The hourly calibration became event-driven on 30 Oct (qia_cal PLAN.md Note 4): a processor is read when IBM changes its readout or T1 figures,
+or after 6 hours. The off-record chain gains an entry only when a run is read, so qia/offchain.json now goes up to about 6.5 hours without a new
+stamp in normal running. Its limit moves from 3.0 to 7.5 hours (the 6 hour floor, plus IBM's queue and one collect). No rule changed.
