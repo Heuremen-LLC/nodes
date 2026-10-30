@@ -30,3 +30,13 @@ The first row of data/drift/history.jsonl, stamped before the first dispatch, wa
 
 ## Addendum (29 Oct, after the home page and division rebuild)
 The target list still held /sad, which now redirects to /hermes/model, so every probe counted one page as unreachable. It is removed, and /hermes, /hermes/model, /hpt, /weights and /airline are added as pages, with the feeds of the last three. No rule changed. The old target gave one false mismatch in each probe since the rename, so the page-match count in the probes since 29 Oct reads one lower than it should have.
+
+## Addendum 2 (30 Oct, from the site pass)
+1. Limits. Addendum 1 said every limit follows its rider's cadence, but hosts, campus, airq, ailuminate, hpt, weights, airline and tape still carried the 40 hour default, pkglicense, hflicense, hfsize, secrecords and pkginstall carried 39, and REVISE (78) and FEDSEP (234) were far above three times a 36 tick cadence. Every limit tied to a tick bus rider is now three times the rider's cadence in ticks at 6.5 minutes a tick, floor 1.5 hours (for example REVISE and FEDSEP 11.7 hours, HPT 565.5, TAPE 2.0). The qia feeds, activity and headlines keep the limits they had.
+2. Stamps. A feed whose top-level stamp is a one-time read names the stamp its live keeper writes, in a "stamps" entry of targets.json. airq/live.json reads live.updated and airline/live.json reads faa.updated.
+3. Targets added. Pages atlas/electricity, atlas/power-plants, atlas/carbon and atlas/planned-plants. Feeds coin/trends.json (every 24 ticks) and iris/live.json (every 2 ticks). Feeds of finished runs (iris/bench.json, iris/bench-results.json, iris/train.json), feeds written by a run and not by a schedule (hermes/model/live.json, qia/t1t2.json) and replies.json (no time stamp) are not targets.
+
+## Addendum 3 (30 Oct, COIN removed)
+The COIN desk was removed from indahl.ai on 30 Oct by Wayfinder's word. The page /coin and the feeds coin/live.json and coin/trends.json are no
+longer targets, so probes from this commit on do not count them. Probes between the removal and this commit (about 13:12 to 17:30 UTC) read
+/coin and coin/live.json as unreachable, which was the removal, not an outage. No rule changed.
