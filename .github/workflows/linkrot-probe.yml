@@ -1,5 +1,5 @@
 name: linkrot-probe
-# Runs one LINKROT pass from this runner's network over data/linkrot/urls.txt. Triggered by Nova's tick bus through repository_dispatch, never on a timer.
+# Runs one LINKROT pass from this runner's network over data/linkrot/urls.txt. Triggered by the HST tick bus (Heuremen Standard Time) through repository_dispatch, never on a timer.
 on:
   repository_dispatch:
     types: [linkrot-probe]
