@@ -23,5 +23,4 @@ jobs:
           git config user.email "268764679+claude-wayfinder@users.noreply.github.com"
           git add data/drift
           git commit -m "DRIFT seat probe from the GitHub runner" || exit 0
-          git pull --rebase -q || true
-          git push
+          for i in 1 2 3 4 5; do git pull --rebase -q && git push && exit 0; sleep $((i*7)); done; exit 1
