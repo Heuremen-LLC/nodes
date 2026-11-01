@@ -12,7 +12,7 @@ A GitHub runner, which is not our Mac and not our network, fetches the live site
 Over the last 24 probes: the number of probes with any DRIFT page, any STALE or UNREACHABLE feed, and a BROKEN chain. Outcome against the claim that the live site is the published site and its feeds are current: CONSISTENT if none of the three occurred in 24 or more probes, ABOVE if any occurred in at least 3 of the last 24, otherwise CANNOT_TELL. Fewer than 24 probes: CANNOT_TELL.
 
 ## Probes
-Triggered by Nova's tick bus through repository_dispatch, never on a schedule. Every probe is saved whole to data/drift/history.jsonl in this repository by the runner, with the run's own timestamp from the runner's clock.
+Triggered by the HST tick bus (Heuremen Standard Time) through repository_dispatch, never on a schedule. Every probe is saved whole to data/drift/history.jsonl in this repository by the runner, with the run's own timestamp from the runner's clock.
 
 ## Known-good
 The probe fetches one page it knows is current (the front page) and one URL it knows is missing, and must read MATCH and UNREACHABLE for them. A probe that fails this saves a row marked CONTROL_FAILED and no reading.
@@ -24,7 +24,7 @@ That the content is true. That nothing changed between probes. That the runner's
 The first row of data/drift/history.jsonl, stamped before the first dispatch, was written by running the probe on the author's own Mac to test it. It is not a reading from the outside seat and should be ignored. Every later row is written by the GitHub runner. The plan and the probe were committed in the same commit, before the first runner probe.
 
 ## Addendum 1 (29 Oct, from the internal audit)
-1. Limits. The plan sets each feed's limit at three times its rider's cadence with a floor of 1.5 hours. Feeds added after the plan took a default of 40 hours, so a fast feed could be a day stale and read FRESH. Every limit is now set from its rider's cadence in Nova ticks at 6.5 minutes a tick (REVISE 78 hours, FEDSEP 234, STACK 3.9, SEAT 2.9, CADA 1.5, COIN 7.8, and so on), and the target list is regenerated from the tick bus cadences.
+1. Limits. The plan sets each feed's limit at three times its rider's cadence with a floor of 1.5 hours. Feeds added after the plan took a default of 40 hours, so a fast feed could be a day stale and read FRESH. Every limit is now set from its rider's cadence in HST ticks at 6.5 minutes a tick (REVISE 78 hours, FEDSEP 234, STACK 3.9, SEAT 2.9, CADA 1.5, COIN 7.8, and so on), and the target list is regenerated from the tick bus cadences.
 2. Incidents. A feed that stays stale, or a broken chain that is not repaired, was flagged on every probe, so one incident seen by three probes read ABOVE. The rolling reading now counts incidents, which are runs of consecutive flagged probes. ABOVE is three or more incidents in the last 24 probes, CONSISTENT is none, otherwise CANNOT_TELL.
 3. Age. The reading covered the last 24 probes however old they were, so if probing stopped the last good reading would stand for ever. If the newest probe is more than three hours old the reading is CANNOT_TELL and the page shows how old it is.
 

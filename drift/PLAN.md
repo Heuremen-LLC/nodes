@@ -12,7 +12,7 @@ A GitHub runner, which is not our Mac and not our network, fetches the live site
 Over the last 24 probes: the number of probes with any DRIFT page, any STALE or UNREACHABLE feed, and a BROKEN chain. Outcome against the claim that the live site is the published site and its feeds are current: CONSISTENT if none of the three occurred in 24 or more probes, ABOVE if any occurred in at least 3 of the last 24, otherwise CANNOT_TELL. Fewer than 24 probes: CANNOT_TELL.
 
 ## Probes
-Triggered by Nova's tick bus through repository_dispatch, never on a schedule. Every probe is saved whole to data/drift/history.jsonl in this repository by the runner, with the run's own timestamp from the runner's clock.
+Triggered by the HST tick bus (Heuremen Standard Time) through repository_dispatch, never on a schedule. Every probe is saved whole to data/drift/history.jsonl in this repository by the runner, with the run's own timestamp from the runner's clock.
 
 ## Known-good
 The probe fetches one page it knows is current (the front page) and one URL it knows is missing, and must read MATCH and UNREACHABLE for them. A probe that fails this saves a row marked CONTROL_FAILED and no reading.

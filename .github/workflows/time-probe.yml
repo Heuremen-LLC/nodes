@@ -1,5 +1,5 @@
 name: time-probe
-# Runs one TIME round from this runner's network. Triggered by Nova's tick bus through repository_dispatch, never on a timer.
+# Runs one TIME round from this runner's network. Triggered by the HST tick bus (Heuremen Standard Time) through repository_dispatch, never on a timer.
 on:
   repository_dispatch:
     types: [time-probe]

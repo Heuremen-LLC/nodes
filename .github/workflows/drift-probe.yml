@@ -1,5 +1,5 @@
 name: drift-probe
-# One DRIFT SEAT probe from this runner. Triggered by Nova's tick bus through repository_dispatch, never on a timer.
+# One DRIFT SEAT probe from this runner. Triggered by the HST tick bus (Heuremen Standard Time) through repository_dispatch, never on a timer.
 on:
   repository_dispatch:
     types: [drift-probe]
