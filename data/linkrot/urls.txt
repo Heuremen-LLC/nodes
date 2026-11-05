@@ -203,7 +203,7 @@ https://github.com/Firenze11/finance_lm
 https://github.com/FlaGer99/SLR-Spatio-Temporal-GNN
 https://github.com/FlyingFeather/DEA-SQL
 https://github.com/FoundationVision/UniTok
-https://github.com/Frank-Wang-oss/GNN\_RUL\_Benchmarking
+https://github.com/Frank-Wang-oss/GNN_RUL_Benchmarking
 https://github.com/Fsoft-AIC/LibMoE
 https://github.com/GAIR-NLP/cognition-engineering
 https://github.com/GDAOSU/LOD2BuildingModel
@@ -387,7 +387,7 @@ https://github.com/MAXNORM8650/SafeDiffusion-R1
 https://github.com/MBZUAI-Paris/Frugal-AI
 https://github.com/METU-SPACE-Lab/Efficient-Learned-3D-Near-Field-MIMO-Imaging
 https://github.com/MFJI/NASH
-https://github.com/MHassaanButt/MHA\_SS\_Mamba
+https://github.com/MHassaanButt/MHA_SS_Mamba
 https://github.com/MIC-DKFZ/TractSeg
 https://github.com/MIC-DKFZ/nnLandmark
 https://github.com/MICLab-Unicamp/Medical-ImagingTutorial
@@ -788,7 +788,7 @@ https://github.com/amirap80/BioPars
 https://github.com/amirgroup-codes/InteractionRecovery
 https://github.com/amjltc295/Free-Form-Video-Inpainting
 https://github.com/amorehead/SSL-With-DR-And-GNNs
-https://github.com/amorimlb/scaling\_matters
+https://github.com/amorimlb/scaling_matters
 https://github.com/amughalbscs16/cukereuse-release
 https://github.com/amurtadha/Alclam
 https://github.com/amy-hyunji/MINTEval
@@ -1969,8 +1969,8 @@ https://zenodo.org/doi/10.5281/zenodo.11584328
 https://zenodo.org/doi/10.5281/zenodo.13342102
 https://zenodo.org/doi/10.5281/zenodo.13644870
 https://zenodo.org/doi/10.5281/zenodo.7260136
-https://zenodo.org/record/4561971\#.YTI5SnVKiEA
-https://zenodo.org/record/4750858\#.YJtw0SYo\_0M
+https://zenodo.org/record/4561971#.YTI5SnVKiEA
+https://zenodo.org/record/4750858#.YJtw0SYo_0M
 https://zenodo.org/record/8041668
 https://zenodo.org/records/11599030
 https://zenodo.org/records/14161235
