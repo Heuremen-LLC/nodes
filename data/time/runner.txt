@@ -1,1 +1,1 @@
-runner: Linux 7.0.0-1017-azure, ip hidden
+runner: Linux 7.0.0-1019-azure, ip hidden
