@@ -1,5 +1,5 @@
 {
- "t": "2026-11-13T07:31:42Z",
+ "t": "2026-11-13T07:50:33Z",
  "control": "PASSED",
  "pages": {
   "/": "MATCH",
@@ -66,17 +66,17 @@
  },
  "feeds": {
   "time/live.json": {
-   "age_h": 0.13,
+   "age_h": 0.11,
    "limit_h": 1.5,
    "state": "FRESH"
   },
   "cada/live.json": {
-   "age_h": 0.13,
+   "age_h": 0.11,
    "limit_h": 1.5,
    "state": "FRESH"
   },
   "uptime/live.json": {
-   "age_h": 0.03,
+   "age_h": 0.01,
    "limit_h": 1.5,
    "state": "FRESH"
   },
@@ -86,72 +86,72 @@
    "state": "FRESH"
   },
   "cadence/live.json": {
-   "age_h": 0.01,
+   "age_h": 0.08,
    "limit_h": 1.5,
    "state": "FRESH"
   },
   "trials/live.json": {
-   "age_h": 0.63,
+   "age_h": 0.94,
    "limit_h": 15.6,
    "state": "FRESH"
   },
   "launch/live.json": {
-   "age_h": 0.21,
+   "age_h": 0.13,
    "limit_h": 1.9,
    "state": "FRESH"
   },
   "linkrot/live.json": {
-   "age_h": 0.01,
+   "age_h": 0.13,
    "limit_h": 1.9,
    "state": "FRESH"
   },
   "arxivdrift/live.json": {
-   "age_h": 0.21,
+   "age_h": 0.11,
    "limit_h": 4,
    "state": "FRESH"
   },
   "support/live.json": {
-   "age_h": 0.5,
+   "age_h": 0.81,
    "limit_h": 15.6,
    "state": "FRESH"
   },
   "pkglicense/live.json": {
-   "age_h": 1.61,
+   "age_h": 1.93,
    "limit_h": 22.1,
    "state": "FRESH"
   },
   "hflicense/live.json": {
-   "age_h": 1.06,
+   "age_h": 1.38,
    "limit_h": 21.5,
    "state": "FRESH"
   },
   "hfsize/live.json": {
-   "age_h": 0.08,
+   "age_h": 0.39,
    "limit_h": 20.8,
    "state": "FRESH"
   },
   "change/live.json": {
-   "age_h": 0.65,
+   "age_h": 0.13,
    "limit_h": 7.8,
    "state": "FRESH"
   },
   "secrecords/live.json": {
-   "age_h": 1.06,
+   "age_h": 1.38,
    "limit_h": 20.2,
    "state": "FRESH"
   },
   "qia/audit.json": {
-   "age_h": 0.13,
+   "age_h": 0.08,
    "limit_h": 2.5,
    "state": "FRESH"
   },
   "qia/stability.json": {
-   "age_h": 0.11,
+   "age_h": 0.06,
    "limit_h": 2.5,
    "state": "FRESH"
   },
   "qia/ibm.json": {
-   "age_h": 0.15,
+   "age_h": 0.13,
    "limit_h": 2.5,
    "state": "FRESH"
   },
@@ -166,52 +166,52 @@
    "state": "FRESH"
   },
   "pkginstall/live.json": {
-   "age_h": 1.9,
+   "age_h": 2.21,
    "limit_h": 19.5,
    "state": "FRESH"
   },
   "stack/live.json": {
-   "age_h": 0.21,
+   "age_h": 0.11,
    "limit_h": 3.9,
    "state": "FRESH"
   },
   "revise/live.json": {
-   "age_h": 0.65,
+   "age_h": 0.96,
    "limit_h": 11.7,
    "state": "FRESH"
   },
   "fedsep/live.json": {
-   "age_h": 0.65,
+   "age_h": 0.96,
    "limit_h": 11.7,
    "state": "FRESH"
   },
   "hpt/live.json": {
-   "age_h": 101.35,
+   "age_h": 101.66,
    "limit_h": 565.5,
    "state": "FRESH"
   },
   "weights/live.json": {
-   "age_h": 1.9,
+   "age_h": 2.21,
    "limit_h": 11.7,
    "state": "FRESH"
   },
   "airline/live.json": {
-   "age_h": 0.25,
+   "age_h": 0.13,
    "limit_h": 1.5,
    "state": "FRESH"
   },
   "ailuminate/live.json": {
-   "age_h": 0.65,
+   "age_h": 0.13,
    "limit_h": 7.8,
    "state": "FRESH"
   },
   "airq/live.json": {
-   "age_h": 0.15,
+   "age_h": 0.13,
    "limit_h": 3.3,
    "state": "FRESH"
   },
   "campus/live.json": {
-   "age_h": 0.65,
+   "age_h": 0.96,
    "limit_h": 23.4,
    "state": "FRESH"
   },
@@ -221,138 +221,138 @@
    "state": "FRESH"
   },
   "tape/live.json": {
-   "age_h": 0.2,
+   "age_h": 0.11,
    "limit_h": 2.0,
    "state": "FRESH"
   },
   "water/live.json": {
-   "age_h": 0.15,
+   "age_h": 0.13,
    "limit_h": 1.6,
    "state": "FRESH"
   },
   "wiki/live.json": {
-   "age_h": 74.46,
+   "age_h": 74.78,
    "limit_h": 180,
    "state": "FRESH"
   },
   "activity.json": {
-   "age_h": 0.08,
+   "age_h": 0.01,
    "limit_h": 0.75,
    "state": "FRESH"
   },
   "headlines.json": {
-   "age_h": 0.01,
+   "age_h": 0.04,
    "limit_h": 1.0,
    "state": "FRESH"
   },
   "qia/cal.json": {
-   "age_h": 0.01,
+   "age_h": 0.08,
    "limit_h": 2.5,
    "state": "FRESH"
   },
   "qia/offchain.json": {
-   "age_h": 0.2,
+   "age_h": 0.11,
    "limit_h": 7.5,
    "state": "FRESH"
   },
   "iris/live.json": {
-   "age_h": 0.01,
+   "age_h": 0.08,
    "limit_h": 1.5,
    "state": "FRESH"
   },
   "qia/records/index.json": {
-   "age_h": 2.91,
+   "age_h": 3.23,
    "limit_h": 9,
    "state": "FRESH"
   },
   "qia/yo.json": {
-   "age_h": 0.13,
+   "age_h": 0.01,
    "limit_h": 40,
    "state": "FRESH"
   },
   "iris/yo.json": {
-   "age_h": 1.0,
+   "age_h": 0.26,
    "limit_h": 40,
    "state": "FRESH"
   },
   "social/live.json": {
-   "age_h": 1.28,
+   "age_h": 1.59,
    "limit_h": 72.2,
    "state": "FRESH"
   },
   "neo/live.json": {
-   "age_h": 1.9,
+   "age_h": 0.13,
    "limit_h": 40,
    "state": "FRESH"
   },
   "cone/live.json": {
-   "age_h": 1.9,
+   "age_h": 0.13,
    "limit_h": 40,
    "state": "FRESH"
   },
   "flu/live.json": {
-   "age_h": 1.06,
+   "age_h": 1.38,
    "limit_h": 40,
    "state": "FRESH"
   },
   "quake/live.json": {
-   "age_h": 1.9,
+   "age_h": 0.13,
    "limit_h": 40,
    "state": "FRESH"
   },
   "solar/live.json": {
-   "age_h": 1.9,
+   "age_h": 0.13,
    "limit_h": 40,
    "state": "FRESH"
   },
   "steo/live.json": {
-   "age_h": 5.81,
+   "age_h": 6.13,
    "limit_h": 40,
    "state": "FRESH"
   },
   "tornado/live.json": {
-   "age_h": 1.28,
+   "age_h": 1.59,
    "limit_h": 40,
    "state": "FRESH"
   },
   "predictions/live.json": {
-   "age_h": 5.8,
+   "age_h": 6.11,
    "limit_h": 40,
    "state": "FRESH"
   },
   "rank/live.json": {
-   "age_h": 5.81,
+   "age_h": 6.13,
    "limit_h": 40,
    "state": "FRESH"
   },
   "seasonal/live.json": {
-   "age_h": 5.81,
+   "age_h": 6.13,
    "limit_h": 40,
    "state": "FRESH"
   },
   "credit/live.json": {
-   "age_h": 61.36,
+   "age_h": 61.68,
    "limit_h": 240,
    "state": "FRESH"
   },
   "census/live.json": {
-   "age_h": 5.81,
+   "age_h": 6.13,
    "limit_h": 40,
    "state": "FRESH"
   },
   "petrol/live.json": {
-   "age_h": 1.85,
+   "age_h": 2.16,
    "limit_h": 200,
    "state": "FRESH"
   },
   "iris/lab/stan.json": {
-   "age_h": 0.01,
+   "age_h": 0.13,
    "limit_h": 1.5,
    "state": "FRESH"
   }
  },
  "chain": {
   "state": "OK",
-  "entries": 202
+  "entries": 203
  }
 }
