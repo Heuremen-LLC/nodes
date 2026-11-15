@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """drift_probe.py: DRIFT SEAT per drift/PLAN.md. Runs on a GitHub runner. Stdlib only."""
 import json, re, hashlib, time, datetime as D, urllib.request, urllib.error, os, sys
-UA = {'User-Agent': 'heuremen-drift-seat/0.1 (+https://github.com/Heuremen-LLC/nodes)'}
+UA = {'User-Agent': 'heuremen-drift-seat/0.1 (+https://github.com/indahl-ai/nodes)'}
 HERE = os.path.dirname(os.path.abspath(__file__)); ROOT = os.path.dirname(HERE); T = json.load(open(os.path.join(HERE, 'targets.json')))
-SITE = 'https://indahl.ai/'; RAW = 'https://raw.githubusercontent.com/Heuremen-LLC/indahl.ai/main/'
+SITE = 'https://indahl.ai/'; RAW = 'https://raw.githubusercontent.com/indahl-ai/indahl.ai/main/'
 def get(u, n=3):
     for i in range(n):
         try: return urllib.request.urlopen(urllib.request.Request(u, headers=UA), timeout=40).read()
