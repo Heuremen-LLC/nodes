@@ -20,8 +20,8 @@ jobs:
           echo "runner: $(uname -sr), $(curl -s https://api.ipify.org >/dev/null 2>&1; echo ip hidden)" > ../data/time/runner.txt
       - name: Save the round
         run: |
-          git config user.name "Bones"
-          git config user.email "268764679+claude-wayfinder@users.noreply.github.com"
+          git config user.name "Heuremen LLC"
+          git config user.email "349448817+indahl-ai@users.noreply.github.com"
           git add data/time
           git commit -m "TIME round from the GitHub runner network" || exit 0
           for i in 1 2 3 4 5; do git pull --rebase -q && git push && exit 0; sleep $((i*7)); done; exit 1

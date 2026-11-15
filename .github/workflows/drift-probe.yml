@@ -19,8 +19,8 @@ jobs:
         run: python3 drift/drift_probe.py
       - name: Save the probe
         run: |
-          git config user.name "Bones"
-          git config user.email "268764679+claude-wayfinder@users.noreply.github.com"
+          git config user.name "Heuremen LLC"
+          git config user.email "349448817+indahl-ai@users.noreply.github.com"
           git add data/drift
           git commit -m "DRIFT seat probe from the GitHub runner" || exit 0
           for i in 1 2 3 4 5; do git pull --rebase -q && git push && exit 0; sleep $((i*7)); done; exit 1

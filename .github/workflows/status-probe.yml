@@ -20,8 +20,8 @@ jobs:
           tail -n 6000 ../data/status/rounds.jsonl > ../data/status/rounds.tmp && mv ../data/status/rounds.tmp ../data/status/rounds.jsonl
       - name: Save the round
         run: |
-          git config user.name "Bones"
-          git config user.email "268764679+claude-wayfinder@users.noreply.github.com"
+          git config user.name "Heuremen LLC"
+          git config user.email "349448817+indahl-ai@users.noreply.github.com"
           git add data/status
           git commit -m "UPTIME round from the GitHub runner network" || exit 0
           for i in 1 2 3 4 5; do git pull --rebase -q && git push && exit 0; sleep $((i*7)); done; exit 1
